@@ -11,8 +11,6 @@ class SplashThird extends StatefulWidget {
 }
 
 class _SplashThird extends State<SplashThird> {
-
-
   @override
   void initState() {
     super.initState();
@@ -21,7 +19,7 @@ class _SplashThird extends State<SplashThird> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-        backgroundColor: Color(0xff3730D1),chnage color
+        backgroundColor: Color(0xFF2d83fa),
         body: new Center(
           child: new Column(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -31,7 +29,7 @@ class _SplashThird extends State<SplashThird> {
                 buildTitle(context),
                 buildImage(context),
                 buildMessage(context),
-              /*  RoundedButton(
+                /*  RoundedButton(
                   text: 'LOGIN',
                   onPressed: () => decideWhichPageToGo(),
                 ),*/
@@ -92,7 +90,10 @@ class _SplashThird extends State<SplashThird> {
       width: double.infinity,
       child: Padding(
         padding: EdgeInsets.symmetric(vertical: 12.0, horizontal: 24.0),
-        child: Image.asset('images/petbig.png', color: Colors.black38,),
+        child: Image.asset(
+          'images/petbig.png',
+          color: Colors.black38,
+        ),
       ),
     );
   }
@@ -106,7 +107,7 @@ class _SplashThird extends State<SplashThird> {
             fontFamily: "UbuntuMono",
             color: Colors.white,
             fontSize: MediaQuery.of(context).size.shortestSide * 0.06),
-            textAlign: TextAlign.center,
+        textAlign: TextAlign.center,
       ),
     );
   }
@@ -116,12 +117,14 @@ class _SplashThird extends State<SplashThird> {
   }
 
   void gotoDesboardPage() {
-    Navigator.pushAndRemoveUntil(context,
+    Navigator.pushAndRemoveUntil(
+        context,
         MaterialPageRoute(builder: (BuildContext context) => DashBoard()),
         ModalRoute.withName('/'));
   }
 
   void gotoResiterPage() {
-    Navigator.push(context, MaterialPageRoute(builder: (context) => Register()));
+    Navigator.push(
+        context, MaterialPageRoute(builder: (context) => Register()));
   }
 }
