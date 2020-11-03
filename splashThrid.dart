@@ -21,7 +21,7 @@ class _SplashThird extends State<SplashThird> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-        backgroundColor: Color(0xff3730D1),
+        backgroundColor: Color(0xff3730D1),chnage color
         body: new Center(
           child: new Column(
               mainAxisAlignment: MainAxisAlignment.center,
