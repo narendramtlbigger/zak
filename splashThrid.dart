@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';nik
+import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:zakce/ui/dashboad/dashboard.dart';
 import 'package:zakce/ui/loginRegister/loginpage.dart';
@@ -19,7 +19,7 @@ class _SplashThird extends State<SplashThird> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-        backgroundColor: Color(0xFF00000),
+        backgroundColor: Color(0xFF2d83fa),
         body: new Center(
           child: new Column(
               mainAxisAlignment: MainAxisAlignment.center,
